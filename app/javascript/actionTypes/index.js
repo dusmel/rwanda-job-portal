@@ -1,0 +1,1 @@
+export const CHANGE_GREETING = 'CHANGE_GREETING';
