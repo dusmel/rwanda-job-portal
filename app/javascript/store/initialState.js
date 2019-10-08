@@ -1,7 +1,9 @@
 const initialState = {
-  greeting: {
-    greet: "Hello",
-  }
-}
+  profile: {
+    jobs: [],
+    AllcompanyApplications: [],
+  },
+  jobs: {},
+};
 
 export default initialState;

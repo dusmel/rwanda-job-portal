@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  position_name: MyString
+  salary: 1
+  working-hours: MyString
+  requirement: MyText
+  experience: MyText
+  description: MyString
+  references: 
+
+two:
+  position_name: MyString
+  salary: 1
+  working-hours: MyString
+  requirement: MyText
+  experience: MyText
+  description: MyString
+  references: 

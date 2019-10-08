@@ -1,0 +1,35 @@
+.profile{
+  .side-bar{
+    border-top: .2em solid #a5673f;
+  }
+  .publish-job-body{
+    min-height: 30rem;
+  }
+  .publish-job-header{
+    padding-bottom: 0 !important;
+    h2{
+      display: inline-block;
+    }
+    button{
+      float: right;
+    }
+  }
+  .position-name{
+    cursor: pointer;
+    color: #1f5dba;
+    text-decoration: underline;
+  }
+}
+p.salary{
+  color: #772b2f;
+  font-weight: bold;
+  font-size: 20px;
+}
+p.job-title{
+  color: #1f5dba;
+  font-weight: bold;
+  font-size: 18px;
+}
+.job-details-modal{
+  overflow-y: auto !important;
+}

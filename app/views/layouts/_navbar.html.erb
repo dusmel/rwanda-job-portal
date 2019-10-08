@@ -1,0 +1,32 @@
+<div class="index-navbar">
+  <div class="ui inverted segment">
+    <div class="ui inverted  menu">
+      <a href="/" class="active item">
+        URMS
+      </a>
+      <div class="right menu">
+        <% unless user_signed_in? %>
+          <div class="ui item">
+            <a href="/auth/login" class="ui button olive button">
+              Login
+            </a>
+          </div>
+          <div class="ui item">
+            <a href="/auth/register/cmon_let_me_in" class="ui button green button">
+              Register!
+            </a>
+          </div>
+        <% else %>
+          <div class="ui item">
+            <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "ui button orange button") %>
+          </div>
+          <div class="ui item">
+            <%= link_to  current_user.account_type == 'company' ? '/profile/company' : '/profile/job-seeker', class: 'profile-link' do  %>
+              <%= image_tag 'profile.png' %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

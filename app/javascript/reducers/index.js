@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
-import greeting from './greeting';
+import profile from './profile';
+import jobs from './job';
 
-const reducers = combineReducers({ greeting });
+const reducers = combineReducers({ profile, jobs });
 
 export default reducers;

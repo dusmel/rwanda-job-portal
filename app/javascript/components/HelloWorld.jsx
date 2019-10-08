@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Button, Icon, Label } from 'semantic-ui-react';
-import { changeGreeting } from '../actions/changeGreeting';
+import { fetchProfile } from '../actions/profileAction';
 import './helloWorld.scss';
 
 class HelloWorld extends Component {
@@ -37,7 +37,7 @@ const mapStateToProps = ({ greeting }) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    changeName: greeting => dispatch(changeGreeting(greeting)),
+    changeName: greeting => dispatch(fetchProfile(greeting)),
   };
 };
 

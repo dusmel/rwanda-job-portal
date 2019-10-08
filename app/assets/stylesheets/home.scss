@@ -1,3 +1,42 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media only screen and (min-width: 1200px) {
+}
+
+.profile-link{
+  padding-top: 7px;
+  margin-top: -18px;
+  height: 38px;
+  width: 38px;
+  img{
+    width: inherit;
+  }
+}
+
+.ui.modal.modal-home{
+  height: 18rem !important;
+  .content{
+    display: flex;
+    padding: 1rem!important;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+  }
+}
+
+.nothing-to-show{
+  text-align: center;
+}
+
+.ui.modals{
+  display: flex;
+}
+.ui.tiny.modal {
+  height: 26rem;
+  margin: 10% auto !important;
+}
+.modal{
+  left: auto !important;
+}
